@@ -1,5 +1,6 @@
 FROM centos
 
-RUN yum install -y update
-RUN yum install -y git vim curl
+WORKDIR /work
+
+RUN yum install -y git vim curl python
 RUN yum groupinstall -y "Development Tools"

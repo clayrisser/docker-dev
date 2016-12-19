@@ -1,4 +1,6 @@
 FROM ubuntu
 
-RUN apt-get -y update
-RUN apt-get install -y git vim curl build-essential
+WORKDIR /work
+
+RUN apt-get update -y
+RUN apt-get install -y git vim curl build-essential python
